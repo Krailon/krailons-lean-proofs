@@ -15,4 +15,11 @@ theorem zero_add (n : ℕ) : 0 + n = n := by
   rw [add_zero]
   rw [add_succ, hd]
 
+theorem succ_add (a b : ℕ) : succ a + b = succ (a + b) := by
+  induction b with d hd
+  rw [add_zero, add_zero]
+  nth_rewrite 2 [add_succ]
+  rw [add_succ]
+  rw [hd]
+
 end NaturalNumberGame4
