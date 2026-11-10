@@ -2,3 +2,4 @@
 -- Import modules here that should be built as part of the library.
 import KrailonsLeanProofs.Basic
 import KrailonsLeanProofs.NaturalNumberGame4.TutorialWorld
+import KrailonsLeanProofs.NaturalNumberGame4.AdditionWorld
