@@ -1,0 +1,15 @@
+name = "krailons-lean-proofs"
+version = "0.1.0"
+defaultTargets = ["krailons-lean-proofs"]
+
+[[lean_lib]]
+name = "KrailonsLeanProofs"
+
+[[lean_exe]]
+name = "krailons-lean-proofs"
+root = "Main"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
