@@ -1,6 +1,5 @@
 module
 
-import Mathlib.Tactic.NthRewrite
 import Mathlib.Data.Nat.Notation
 import KrailonsLeanProofs.NaturalNumberGame4.TutorialWorld
 
