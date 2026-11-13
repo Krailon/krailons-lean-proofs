@@ -3,3 +3,4 @@
 import KrailonsLeanProofs.Basic
 import KrailonsLeanProofs.NaturalNumberGame4.TutorialWorld
 import KrailonsLeanProofs.NaturalNumberGame4.AdditionWorld
+import KrailonsLeanProofs.NaturalNumberGame4.MultiplicationWorld
