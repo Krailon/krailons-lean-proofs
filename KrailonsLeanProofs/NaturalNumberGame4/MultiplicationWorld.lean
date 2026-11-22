@@ -83,7 +83,19 @@ public theorem add_mul (a b c : ℕ) : (a + b) * c = a * c + b * c := by
   rw [mul_comm c (a + b)]
 
 -- Level 9
--- public theorem mul_assoc (a b c : ℕ) : (a * b) * c = a * (b * c) := by
--- TODO
+public theorem mul_assoc (a b c : ℕ) : (a * b) * c = a * (b * c) := by
+  induction a with
+  | zero =>
+    rw [zero_mul, zero_mul, zero_mul]
+  | succ d hd =>
+    rw [succ_mul]
+    rw [succ_mul]
+    rw [add_comm (d * b) b]
+    rw [mul_comm (b + (d * b)) c]
+    rw [mul_add c b (d * b)]
+    rw [mul_comm c b]
+    rw [add_comm (b * c) (c * (d * b))]
+    rw [mul_comm c (d * b)]
+    rw [hd]
 
 end NaturalNumberGame4
