@@ -22,6 +22,9 @@ public theorem succ_add (a b : ℕ) : succ a + b = succ (a + b) := by
     rw [add_succ, add_succ]
     rw [hd]
 
+public theorem add_succ (a b : ℕ) : a + succ b = succ (a + b) := by
+  rfl
+
 public theorem add_comm (a b : ℕ) : a + b = b + a := by
   induction b with
   | zero =>
